@@ -1,4 +1,3 @@
-## 각 벤치마크 데이터셋을 불러올 때 (전처리 하여서) 사용하는 코드 (.inference에서 import 할 파일)
 import re
 import codecs
 import json
