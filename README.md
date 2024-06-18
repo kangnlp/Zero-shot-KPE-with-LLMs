@@ -27,3 +27,10 @@ python llama3_hybrid.py \
   --core_nlp_path "your StanfordCoreNLP path"\
   --auth_token "your huggingface auth_token for Llama3"
 ```
+
+
+
+## Evaluation
+```python
+python evaluation.py --path "directory path of prediction files"
+```
