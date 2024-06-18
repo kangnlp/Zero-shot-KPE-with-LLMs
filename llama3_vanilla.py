@@ -26,7 +26,7 @@ if __name__ == '__main__':
     parser.add_argument('--model_name', type=str, default='meta-llama/Meta-Llama-3-8B-Instruct', help="Llama3 path")
     parser.add_argument('--data_path', type=str, default='data/processed', help="Directory path of test datasets")
     parser.add_argument('--task_instruction', type=str, default=task_instruction, help="Vanilla prompt")
-    parser.add_argument('--max_new_tokens', type=str, default='128', help="Input Document Max Length")
+    parser.add_argument('--max_new_tokens', type=str, default='128', help="Maximum number of tokens to generate")
     parser.add_argument('--cuda', type=str, default='0', help="GPU")
     parser.add_argument('--core_nlp_path', type=str, default='stanford-corenlp-full-2018-02-27', help="Your StanfordCoreNLP path")
     parser.add_argument('--auth_token', type=str, default='', help="auth_token for Llama")
