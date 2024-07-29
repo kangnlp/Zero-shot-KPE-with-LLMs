@@ -28,7 +28,6 @@ if __name__ == '__main__':
     parser.add_argument('--task_instruction', type=str, default=task_instruction, help="Vanilla prompt")
     parser.add_argument('--max_new_tokens', type=str, default='128', help="Maximum number of tokens to generate")
     parser.add_argument('--cuda', type=str, default='0', help="GPU")
-    parser.add_argument('--core_nlp_path', type=str, default='stanford-corenlp-full-2018-02-27', help="Your StanfordCoreNLP path")
     parser.add_argument('--auth_token', type=str, default='', help="auth_token for Llama")
 
     args = parser.parse_args()
@@ -36,8 +35,6 @@ if __name__ == '__main__':
     data_path = args.data_path
     task_instruction = args.task_instruction
     max_new_tokens = int(args.max_new_tokens)
-    other_max_new_tokens = 512
-    StanfordCoreNLP_path = args.core_nlp_path
     auth_token = args.auth_token
 
 
@@ -73,7 +70,6 @@ if __name__ == '__main__':
 
     print(f"Settings saved to {settings_path}")
 
-    en_model = StanfordCoreNLP(StanfordCoreNLP_path, quiet=True)
 
     dataset_list = ['Inspec', 'SemEval2017', 'SemEval2010', 'DUC2001', 'nus', 'krapivin'] 
 
