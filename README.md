@@ -1,5 +1,5 @@
 # Zero-shot-KPE-with-LLMs
-This is code of our paper "Empirical Study of Zero-shot Keyphrase Extraction with Large Language".
+This is code of our paper "[Empirical Study of Zero-shot Keyphrase Extraction with Large Language](https://aclanthology.org/2025.coling-main.248)".
 
 ## Requirements
 - torch=2.2.2
